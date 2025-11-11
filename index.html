@@ -10,27 +10,32 @@
 <body>
     <header>
         <h1>
-            <img src="cormon.svg" alt="Logo de Cormon" width="80px"
+            <img src="../img/cormon.svg" alt="Logo de Cormon" width="50px"/>
         </h1>
         <nav>
             <a href="#Servicios">Servicios</a>
             <a href="#Productos">Productos</a>
             <a href="#Valores">Valores</a>
-            <a href="#Contacto">Contacto</a>
+            
         </nav>
+        <div>
+            <a href="#Contancto">Solicitar cotización</a>
+            <!-- <a href="">Iniciar Sesión</a> -->
+        </div>
+
     </header>
 
     <main>
             <section id="Servicios">
+                <img src="../img/background.jpg" alt="background" width="600px">
+                <h1>Soluciones de Metalurgia de Precisión</h1>
+                <p>Cormon: Expertos en soluciones metalúrgicas de alta calidad</p>
+
+            </section>
+            <section>
                 <header>
-                    <h1>Soluciones de Metalurgia de Precisión</h1>
-            <p>Cormon: Expertos en soluciones metalúrgicas de alta calidad</p>
-
-                    <img src="./background.jpg" alt="background" width="600px">
                     <h2>Nuestros Servicios</h2>
-
                 </header>
-
                 <footer>
                     <article>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-settings"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z" /><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /></svg>
@@ -59,18 +64,20 @@
                 </header>
 
                 <footer>
-                    <article>
-                        <img src="pieza-hexagonal.jpg" alt="Pieza Hexagonal">
-                        <p>Piezas de metal CNC</p>
-                    </article>
-                    <article>
-                        <img src="estructura-metalica.jpg" alt="Estructura Metálica">
-                        <p>Estructuras de metálica</p>
-                    </article>
-                    <article>
-                        <img src="componente-metalico.jpg" alt="Componente Metálico">
-                        <p>Componentes especializados</p>
-                    </article>
+                    <div class="carousel-container">
+                        <div class="carousel-window">
+                            <div class="carousel-track">
+                                </div>
+                        </div>
+                        
+                        <div class="controls">
+                            <button id="prev-button" disabled>Anterior</button>
+                            <button id="next-button">Siguiente</button>
+                        </div>
+
+                        <h2 id="current-title"></h2>
+                    </div>
+
                 </footer>
             </section>
             <section id="Valores">
@@ -96,6 +103,6 @@
             </section>
 
     </main>
-
+    <script src="script.js"></script>
 </body>
 </html>
